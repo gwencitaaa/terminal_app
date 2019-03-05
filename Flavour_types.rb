@@ -1,31 +1,13 @@
-# class FlavourTypes
-#     #
-#     def initialize(category_name, cuisines)
-#         @category_name = make
-#         @cuisines = year
-#     end
-# end
+class FlavourType
+    # allow these attributes to be read for each instance
+    attr_reader :category_name, :cuisines
 
-# #  INSTANCES
-# #  1. Hot & Spicy  2. Creamy & Rich  3. Mild  and Fresh
-
-# eg_flavour_type = {
-#     category_name: '1. Hot & Spicy',
-#     cuisines: ['Indian', 'Chinese']
-# }
-
-@a = 5
-
-# if @a > 10
-#     my_var = "Hi"
-# else
-#     my_var = "Bye"
-# end
-
-def puts_thing
-    puts @a
+    def initialize(category_name, cuisines)
+        @category_name = category_name
+        @cuisines = cuisines
+    end
 end
 
-# puts my_var
-
-puts_thing
+hot_spicy = FlavourType.new('Hot & Spicy', ['Indian', 'Chinese'])
+creamy_rich = FlavourType.new('Creamy & Rich', ['Indian', 'Chinese'])
+mild_fresh = FlavourType.new('Mild & Fresh', ['Indian', 'Chinese'])
