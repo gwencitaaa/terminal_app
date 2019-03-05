@@ -12,12 +12,12 @@ class Restaurant
         #instance variables
         @name = name
         @address = address
-        #instance variables in other classes
+        #instance variables in other classes (FlavourType, )
         @cuisine_type = cuisine_type
         @flavour_type = flavour_type
     end 
 
-    #creating method to suggest restaurant based on cuisine type (with cuisine type coming from cuisine class)
+    #method to suggest restaurant based on cuisine type (with cuisine type coming from cuisine class)
     def recommend_restaurant_from_cuisine_type
         cuisine_type() #GW note: check return is a cuisine type
         #based on cuisine type, push out a random choice of restaurant from the restaurant array that cuisine type category 
