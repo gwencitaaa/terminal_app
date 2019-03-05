@@ -20,7 +20,7 @@ Outside MVP if time:
 - how expensive e.g. $$ vs $$$ (5 scale?)
 - rating (Based on review?) e.g. 5 stars? 
 - dietary options / preferences e.g. Halal, gluten free, vego
-
+- random may repeat, how to deal with this? Decided to keep out of MVP but pursue if completed
 Notes from rubric meeting (info not clear from rubric):
 - 5 mins EXCL. questions
 - 80% should be app walk through (check—in slide deck or live demo??)
@@ -74,3 +74,7 @@ See visual plan for user flow
 
 Approval:
 Comments from Anhar : check out geocoder gem if time
+Put two classes together for food bc they're both food—we thought this seemed weird
+Approval:
+Simon
+Yes keep classes separate (three separate ideas)
