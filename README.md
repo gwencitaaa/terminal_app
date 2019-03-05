@@ -19,7 +19,8 @@ Outcomes for MVP:
 Outside MVP if time: 
 - how expensive e.g. $$ vs $$$ (5 scale?)
 - rating (Based on review?) e.g. 5 stars? 
-
+- dietary options / preferences e.g. Halal, gluten free, vego
+- random may repeat, how to deal with this? Decided to keep out of MVP but pursue if completed
 Notes from rubric meeting (info not clear from rubric):
 - 5 mins EXCL. questions
 - 80% should be app walk through (check—in slide deck or live demo??)
@@ -32,6 +33,48 @@ Everyone should add updates of what they're doing in this readme + commit as soo
 For code changes, everyone should commit once running successfully—show one other group member before doing so (live demo)
 For Trello, members tick off their own tasks when done + upload screenshot to here. 
 
+# logistics
+Everyone added their branch to git hub
+Trello board created
+Everyone joined trello board
+Everyone working in local README.md and commiting when there are changes
 
 # Structure of code planning
-- new line .. paul's line
+Assumptions:
+1 user entering input
+Can read and follow the instructions (but will test edge cases)
+Vegetarian options included but not separateable for MVP
+
+Parts to code: 
+
+G to do:
+Create class for Restaurant, which will have attributes for:
+> Trading name @restaurant_name String
+> address @restaurant_location String
+> type of food  @cuisine_category String
+> will be one array of hashes (one hash per restaurant)
+
+P to do:
+Create class for Flavour_types
+> should be array
+> has four options: hot and spicy, creamy and rich, mild and fresh
+
+M to do:
+Create class for Cuisine_types 
+> should be array
+> array should include all cuisine type (i.e. geographical regions)
+> e.g. Chinese, Korean, Japanese, Middle Eastern (incl. Persian), Modern Australian, Pub fare, Vegetarian, Vegan, Vietnamese, Cambodian, Colombian, Mexican, Chilean, Brazilian, French, German, Italian (person add as they like)
+
+Method outside class to get input
+while loop to get user input ?
+def ask_opening_question 
+    while user_input != 
+
+See visual plan for user flow
+
+Approval:
+Comments from Anhar : check out geocoder gem if time
+Put two classes together for food bc they're both food—we thought this seemed weird
+Approval:
+Simon
+Yes keep classes separate (three separate ideas)
