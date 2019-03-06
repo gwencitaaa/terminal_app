@@ -1,6 +1,9 @@
 # terminal_app
 Docs for terminal app for Mahdi, Paul and Gwenny
 
+#link to Github (Master)
+[Github link for terminal app](https://github.com/gwencitaaa/terminal_app)
+
 # brainstorm
 Concept: 
 - app 'Where should I eat dinner?'
