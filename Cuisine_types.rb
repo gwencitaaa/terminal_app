@@ -8,9 +8,11 @@ food_type.each_with_index do |element, index|
 puts("#{index + 1}.\t#{element} food")
 end
 puts"4.\tQuit"
-# user_choice = gets.chomp.to_i
-def input_validation(food_type)
-    user_choice = gets.chomp.to_i
+user_choice = gets.chomp.to_i
+
+
+def input_validation(food_type, user_choice)
+    # user_choice = gets.chomp.to_i
     # user_input = gets.chomp.to_i
     while user_choice != 1 && user_choice !=2 && user_choice !=3 && user_choice !=4
         puts "Incorrect input."
@@ -35,7 +37,7 @@ def input_validation(food_type)
     end
 end
 
-puts input_validation(food_type) 
+input_validation(food_type,user_choice) 
 
 TYPES_OF_CUSINES = ["Chinese", "Indian", "Korean", "Italian", "Vegetarian", "Vietnamese", "Middle Eastern", "Mexican", "Japanese"]
 
@@ -97,7 +99,7 @@ class CuisineType
             puts("#{index + 1}.\t#{element} food")
             end
 
-        puts "Type the cuisine you prefer."
+        puts "Type the numvber of cuisine you prefer."
 
         puts input_validation2(samples)
         
@@ -114,11 +116,11 @@ def input_validation2(samples)
     
         case user_choice
         when 1 
-            return "You chose '#{samples[0]}'"   
+            return "#{samples[0]}"
         when 2
-            return "You chose '#{samples[1]}'"
+            return "#{samples[1]}"
         when 3
-            return "You chose '#{samples[2]}'"
+            return "#{samples[2]}"
         else
             while puts "Incorrect input."
                 puts "Please enter a number between 1 and 3."
