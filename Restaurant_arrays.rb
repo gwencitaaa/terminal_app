@@ -1,7 +1,7 @@
 
 filepath = 'Restaurant_list.csv'
 require_relative = "Cuisine_types.rb"
-
+require 'pry'
 #method to read csv of restaurant information 
 require 'csv'
 
@@ -36,17 +36,32 @@ def create_array_of_restaurants_by_cuisine(filepath, cuisine_choice)
     restaurants_by_cuisine_type = array_of_restaurants.select do |restaurant|
         restaurant[:cuisine_type] == cuisine_choice
     end
-    binding.pry
     #returning restaurants in cuisine group so random selection can be pulled out of it
     return restaurants_by_cuisine_type
 end
 
-# create_array_of_restaurants_by_cuisine(filepath), 
+# create_array_of_restaurants_by_cuisine(filepath)
 
 # method to go through array of restaurants by cuisine and return random selection
-def make_restaurant_recommendation(filepath)
-    restaurant_recommendation = create_array_of_restaurants_by_cuisine(filepath) 
+def get_choice(filepath, cuisine_choice)
+    user_input = gets.chomp.to_i
+
+    if(user_input == 1)
+        puts "Enjoy your dinner!"
+        return 
+    elsif(user_input == 2)
+        return make_restaurant_recommendation(filepath, cuisine_choice)
+    else
+        puts "Incorrect input. Please enter 1 or 2."
+        get_choice(filepath, cuisine_choice)
+    end
+end
+
+def make_restaurant_recommendation(filepath, cuisine_choice)
+   
+    restaurant_recommendation = create_array_of_restaurants_by_cuisine(filepath, cuisine_choice) 
     recommendation = restaurant_recommendation.sample
+   
     #message to user with random selection
     final_string = """
     We recommend this restaurant for you! 
@@ -57,17 +72,7 @@ def make_restaurant_recommendation(filepath)
     Sounds great!     Press 1
     Try again please. Press 2
     """
-    return final_string
-    
-    user_input = gets.chomp.to_i
-    if user_input != 1 && user_input != 2
-        puts "Incorrect input. Please enter 1 or 2."
-    elsif 
-        user_input == 1
-        puts "Enjoy your dinner!"
-    else
-        user_input == 2
-        return make_restaurant_recommendation
-    end
+    puts final_string
+    get_choice(filepath, cuisine_choice)
 end
 
