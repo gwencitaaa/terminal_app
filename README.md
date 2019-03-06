@@ -50,14 +50,14 @@ Parts to code:
 SPRINT: individual parts to code
 
 Screenshot from Trello, end of Day 1 (sprints not labelled yet):
-![Screenshot from Trello, Day 1 (sprints not lablled yet)](https://raw.githubusercontent.com/gwencitaaa/terminal_app/master/Trello_screenshot_Day2AM_progress.png)
+![Screenshot from Trello, Day 1 (sprints not lablled yet)](https://raw.githubusercontent.com/gwencitaaa/terminal_app/master/docs/Trello_screenshot_Day2AM_progress.png)
 
 G to do:
 Create class for Restaurant, which will have attributes for:
 > Trading name @restaurant_name String
 > address @restaurant_location String
 > type of food  @cuisine_category String
-> will be one array of hashes (one hash per restaurant)
+> will be one array of hashes (one hash per restaurant
 
 Day 2 update: 
 > Class removed because data from csv was sufficient + this was a faster option 
