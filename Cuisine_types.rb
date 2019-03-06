@@ -24,11 +24,11 @@ def input_validation(food_type, user_choice)
     when 4
         puts "Enjoy your night!"
     when 1 
-        return "You chose '#{food_type[0]}'"   
+        return "#{food_type[0]}"
     when 2
-        return "You chose '#{food_type[1]}'"
+        return "#{food_type[1]}"
     when 3
-        return "You chose '#{food_type[2]}'"
+        return "#{food_type[2]}"
     else
         while puts "Incorrect input."
             puts "Please enter a number between 1 and 4."
@@ -37,7 +37,10 @@ def input_validation(food_type, user_choice)
     end
 end
 
-input_validation(food_type,user_choice) 
+
+input_validation(food_type, user_choice) 
+
+# puts input_validation(food_type) 
 
 TYPES_OF_CUSINES = ["Chinese", "Indian", "Korean", "Italian", "Vegetarian", "Vietnamese", "Middle Eastern", "Mexican", "Japanese"]
 
@@ -128,9 +131,9 @@ def input_validation2(samples)
             end
         end
     end
-# creating class instance of cuisine type based on user selection
-user_cuisine_choice = CuisineType.new()
+# # creating class instance of cuisine type based on user selection
+# user_cuisine_choice = CuisineType.new()
 
-# getting the user's choice of cuisine and returning
-arrays_of_samples = user_cuisine_choice.make_samples
-user_cuisine_choice.choose_cuisine_type(arrays_of_samples)
+# # getting the user's choice of cuisine and returning
+# arrays_of_samples = user_cuisine_choice.make_samples
+# user_cuisine_choice.choose_cuisine_type(arrays_of_samples)
