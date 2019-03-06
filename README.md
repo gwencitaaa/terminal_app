@@ -63,7 +63,7 @@ M to do:
 Create class for Cuisine_types 
 > should be array
 > array should include all cuisine type (i.e. geographical regions)
-> e.g. Chinese, Korean, Japanese, Middle Eastern (incl. Persian), Modern Australian, Pub fare, Vegetarian, Vegan, Vietnamese, Cambodian, Colombian, Mexican, Chilean, Brazilian, French, German, Italian (person add as they like)
+> e.g. Chinese, Korean, Japanese, Middle Eastern (incl. Persian), Modern Australian, Pub fare, Vegetarian, Vietnamese, Cambodian, Colombian, Mexican, Chilean, Brazilian, French, German, Italian (person add as they like)
 
 Method outside class to get input
 while loop to get user input ?
@@ -75,6 +75,17 @@ See visual plan for user flow
 Approval:
 Comments from Anhar : check out geocoder gem if time
 Put two classes together for food bc they're both food—we thought this seemed weird
-Approval:
-Simon
+
+Approval: 
+received from Simon + Aaron
 Yes keep classes separate (three separate ideas)
+
+Day 2 updates
+Presentation slide deck draft completed, group to go through together and divy up speaking sections
+Restaurant class removed as .csv file provides all data needed
+    Instead, using functions to create array of restaurants by cuisine and select random restaurant (from single cuisine group)
+Master merged so files are current (e.g. Trello screenshot of progress added, updated code added, GIT cheatsheets removed)
+Flavour type class completed
+Cuisine type class completed
+
+~11:45am, group meeting to pull code together into one file 
