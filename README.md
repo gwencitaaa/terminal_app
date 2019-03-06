@@ -33,6 +33,11 @@ Notes from rubric meeting (info not clear from rubric):
 - take screenshots of convos in slack / Trello and put in here
 - record all working notes in here
 
+Slack screenshots:
+![Screenshots of slack conversation 1](https://raw.githubusercontent.com/gwencitaaa/terminal_app/master/docs/Slack_screenshot_1.png)
+
+![Screenshots of slack conversation 2](https://raw.githubusercontent.com/gwencitaaa/terminal_app/master/docs/Slack_screenshot_2.png)
+
 # Responsibilities of group members
 Discussed Tues. AM before doing structure
 Everyone should add updates of what they're doing in this readme + commit as soon as changes are made
@@ -144,3 +149,6 @@ Added a Method
 3pm update
 SPRINT: Group coding for Master file
 All individual parts completed, commencing Master file sprint
+
+Trello screenshot at end of project:
+![Trello at completion of project](https://raw.githubusercontent.com/gwencitaaa/terminal_app/master/docs/Trello_screenshot_Final.png)
