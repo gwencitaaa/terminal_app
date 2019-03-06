@@ -4,6 +4,9 @@ Docs for terminal app for Mahdi, Paul and Gwenny
 #link to Github (Master)
 [Github link for terminal app](https://github.com/gwencitaaa/terminal_app)
 
+#link to Trello 
+[Trello board link](https://trello.com/b/KOOmY8qz)
+
 # brainstorm
 Concept: 
 - app 'Where should I eat dinner?'
