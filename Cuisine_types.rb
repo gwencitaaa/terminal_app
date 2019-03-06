@@ -1,41 +1,41 @@
-# require_relative 'Flavour_types'
-# food_type = ["Hot and spicy", "Creamy and rich", "Mild and fresh"]
+require_relative 'Flavour_types'
+food_type = ["Hot and spicy", "Creamy and rich", "Mild and fresh"]
 
-# puts("")
-# puts("What are you in the mood for? Press 1 to 4 according to your preference.")
-# # list food type in a list with numbers for them
-# food_type.each_with_index do |element, index|
-# puts("#{index + 1}.\t#{element} food")
-# end
-# puts"4.\tQuit"
-# # user_choice = gets.chomp.to_i
-# def input_validation(food_type)
-#     user_choice = gets.chomp.to_i
-#     # user_input = gets.chomp.to_i
-#     while user_choice != 1 && user_choice !=2 && user_choice !=3 && user_choice !=4
-#         puts "Incorrect input."
-#         puts "Please enter a number between 1 and 4."
-#         user_choice= gets.chomp.to_i
-#     end
+puts("")
+puts("What are you in the mood for? Press 1 to 4 according to your preference.")
+# list food type in a list with numbers for them
+food_type.each_with_index do |element, index|
+puts("#{index + 1}.\t#{element} food")
+end
+puts"4.\tQuit"
+# user_choice = gets.chomp.to_i
+def input_validation(food_type)
+    user_choice = gets.chomp.to_i
+    # user_input = gets.chomp.to_i
+    while user_choice != 1 && user_choice !=2 && user_choice !=3 && user_choice !=4
+        puts "Incorrect input."
+        puts "Please enter a number between 1 and 4."
+        user_choice= gets.chomp.to_i
+    end
 
-#     case user_choice
-#     when 4
-#         puts "Enjoy your night!"
-#     when 1 
-#         return "You chose '#{food_type[0]}'"   
-#     when 2
-#         return "You chose '#{food_type[1]}'"
-#     when 3
-#         return "You chose '#{food_type[2]}'"
-#     else
-#         while puts "Incorrect input."
-#             puts "Please enter a number between 1 and 4."
-#             user_choice= gets.chomp.to_i
-#         end
-#     end
-# end
+    case user_choice
+    when 4
+        puts "Enjoy your night!"
+    when 1 
+        return "You chose '#{food_type[0]}'"   
+    when 2
+        return "You chose '#{food_type[1]}'"
+    when 3
+        return "You chose '#{food_type[2]}'"
+    else
+        while puts "Incorrect input."
+            puts "Please enter a number between 1 and 4."
+            user_choice= gets.chomp.to_i
+        end
+    end
+end
 
-# puts input_validation(food_type) 
+puts input_validation(food_type) 
 
 TYPES_OF_CUSINES = ["Chinese", "Indian", "Korean", "Italian", "Vegetarian", "Vietnamese", "Middle Eastern", "Mexican", "Japanese"]
 
@@ -100,11 +100,6 @@ class CuisineType
         puts "Type the cuisine you prefer."
 
         puts input_validation2(samples)
-        # user_input3 = gets.chomp.to_s
-        # while !samples.include?(user_input3)
-        #     puts "You entered an invalid option. Please enter one of the cuisine options."
-        #     user_input3 = gets.chomp.to_s
-        # end
         
     end            
 end
@@ -134,6 +129,6 @@ def input_validation2(samples)
 # creating class instance of cuisine type based on user selection
 user_cuisine_choice = CuisineType.new()
 
-# getting the user's choice of cuisine 
+# getting the user's choice of cuisine and returning
 arrays_of_samples = user_cuisine_choice.make_samples
 user_cuisine_choice.choose_cuisine_type(arrays_of_samples)
