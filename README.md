@@ -75,6 +75,7 @@ See visual plan for user flow
 Approval:
 Comments from Anhar : check out geocoder gem if time
 Put two classes together for food bc they're both food—we thought this seemed weird
+
 Approval: 
 received from Simon + Aaron
 Yes keep classes separate (three separate ideas)
