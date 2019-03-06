@@ -1,5 +1,5 @@
 # require 'csv'
-
+require 'pry'
 # cuisine_type=["hot or spicy", "creamy and rich", "mild and fresh"]
 # # cuisine_type=[type1, type2,type3, type4, type5, type6,type7]
 # puts("")
@@ -37,47 +37,28 @@
     
 # puts input_validation(cuisine_type) 
 
-TYPES = ["type1", "type2", "type3", "type4", "type5", "type6", "type7", "type8", "type9"]
+TYPES_OF_CUSINES = ["Chinies", "Indian", "Korean", "Italian", "Vegeterian", "Vietnamies", "Middle eastean", "Mexican", "fast food"]
 
 class Cuisine_Type
     def initialize 
         
     end
 
-    # def first_sample_maker
-    #     sample1= TYPES.sample(3)
-    # end
-
-    # def second_sample_maker(types, first_sample)
-    #     types = types - first_sample 
-    #     second_batch_of_sample= types.sample(3)
-    # end
-        
-    # def second_sample_checker(sample1, sample2)
-    #     sample2.each_with_index do |element,i|
-    #     end
-    #     if sample1.include?(element)==true
-    #         # if sample1 includes the same item, we want a different item?
-    #         sample2[i] = TYPES.sample
-    #     else 
-    #         return second_sample_maker
-    #     end
-    # end
+    # create sample of 3 from TYPES_OF_CUSINES array
     def create_sample(samples_array, number_of_samples)
         return samples_array.sample(number_of_samples)
-      end
-      
-      def delete_duplicates(all_samples, already_created_sample)
+    end
+
+      #delet sample array from TYPES_OF_CUSINES array
+    def delete_duplicates(all_samples, already_created_sample)
         new_array = all_samples - already_created_sample
-      end
-      
-      
-    #   all_samples = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-     def choosing_samples
-      sample1 = create_sample(TYPES, 3)
+    end
+              
+     def make_samples  # make 3 unique sample of  arrays from TYPES_OF_CUSINES array 
+      sample1 = create_sample(TYPES_OF_CUSINES, 3)
       p sample1
       
-      new_array = delete_duplicates(TYPES, sample1)
+      new_array = delete_duplicates(TYPES_OF_CUSINES, sample1)
       sample2 = create_sample(new_array, 3)
       p sample2
       
@@ -86,21 +67,14 @@ class Cuisine_Type
       sample3 = create_sample(new_array,3)
     p sample3
     arrays_of_samples = []
-    arrays_of_samples << sample1 << sample2 << sample3
+    arrays_of_samples << sample1 << sample2 << sample3 # append 3 above array of samples in array_of samples
     puts "arrays_of_samples #{arrays_of_samples}"
     return arrays_of_samples
-
-
      end
-    def choose_cuisine_type(arrays_of_samples)
-        # puts "what type of cuisin do you like? "
-        # option_batch1= TYPES.sample(3)
-        
-        # puts TYPES
-        # puts cuisine_type.sample(3)
+    def choose_cuisine_type(arrays_of_samples) 
         selection = true
         counter = 0
-        while selection && counter < arrays_of_samples.length 
+        while selection && counter < arrays_of_samples.length # any time user is not happy with 3 option that been offered, provide new new 3options. 
         
             p arrays_of_samples[counter]
             puts "are you happy with that? enter 'Y' for yes or 'N' for seeing another options"
@@ -121,17 +95,15 @@ class Cuisine_Type
         samples=arrays_of_samples[counter]
         puts "choose one of cuisines"
         user_input3= gets.chomp.to_s
+        # binding.pry
         while !samples.include?(user_input3)
             puts "you entered wrong.please enter again."
             user_input3= gets.chomp.to_s
         end
-        puts "you choose #{user_input3}"
+        puts "you choosing #{user_input3}"
     end            
 end
 user1= Cuisine_Type.new()
-# p user1_first_sample = user1.first_sample_maker
-# p user1_second_sample = user1.second_sample_maker(TYPES, user1_first_sample)
-# user1.second_sample_checker
-# user1.choose_cuisine_type()
-arrays_of_samples=user1.choosing_samples
+#
+arrays_of_samples=user1.make_samples
 puts user1.choose_cuisine_type(arrays_of_samples)
