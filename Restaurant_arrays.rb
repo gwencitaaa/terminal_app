@@ -30,18 +30,18 @@ end
 read_line_by_line('Restaurant_list.csv')
 
 # method to find all of the restaurants from the cuisine that the user selects, which will return an array of restaurants by cuisine
-def create_array_of_restaurants_by_cuisine(filepath)
+def create_array_of_restaurants_by_cuisine(filepath, cuisine_choice)
     array_of_restaurants_by_cuisine = []
     array_of_restaurants = read_line_by_line(filepath)
     restaurants_by_cuisine_type = array_of_restaurants.select do |restaurant|
-        restaurant[:cuisine_type] == choose_cuisine_type()
+        restaurant[:cuisine_type] == cuisine_choice
     end
+    binding.pry
     #returning restaurants in cuisine group so random selection can be pulled out of it
     return restaurants_by_cuisine_type
 end
 
-#still being tested—need to get updated file from master into folder + be running all methods in row to see
-p create_array_of_restaurants_by_cuisine(filepath)
+# create_array_of_restaurants_by_cuisine(filepath), 
 
 # method to go through array of restaurants by cuisine and return random selection
 def make_restaurant_recommendation(filepath)
