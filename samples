@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /mnt/c/Users/mehdi/fast-track/terminal_app/mahdi-teminal-app.rb @ line 97 Cuisine_Type#choose_cuisine_type:
+
+     [1;34m92[0m:                 counter += [1;34m1[0m
+     [1;34m93[0m:             [32mend[0m
+     [1;34m94[0m:         [32mend[0m 
+     [1;34m95[0m:         samples=arrays_of_samples[counter]
+     [1;34m96[0m:         puts [31m[1;31m"[0m[31mchoose one of cuisines[1;31m"[0m[31m[0m
+ =>  [1;34m97[0m:         binding.pry
+     [1;34m98[0m:         user_input3= gets.chomp.to_s
+     [1;34m99[0m:         [32mwhile[0m !samples.include?(user_input3)
+    [1;34m100[0m:             puts [31m[1;31m"[0m[31myou entered wrong.please enter again.[1;31m"[0m[31m[0m
+    [1;34m101[0m:             user_input3= gets.chomp.to_s
+    [1;34m102[0m:         [32mend[0m
+

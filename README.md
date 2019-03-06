@@ -40,6 +40,7 @@ Everyone joined trello board
 Everyone working in local README.md and commiting when there are changes
 
 # Structure of code planning
+=======
 Assumptions:
 1 user entering input
 Can read and follow the instructions (but will test edge cases)
@@ -89,3 +90,4 @@ Flavour type class completed
 Cuisine type class completed
 
 ~11:45am, group meeting to pull code together into one file 
+
