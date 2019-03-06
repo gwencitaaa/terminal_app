@@ -14,7 +14,7 @@ Ethical considerations/societal impact:
 Outcomes for MVP:
 - take user input
 - return a restaurant suggestion based on input 
-  - Trading name, address, type of food
+  - Include restaurant trading name, address, type of food
   
 Outside MVP if time: 
 - how expensive e.g. $$ vs $$$ (5 scale?)
@@ -73,16 +73,20 @@ Create class for Flavour_types
 > should be array
 > has four options: hot and spicy, creamy and rich, mild and fresh
 
+
 Day 2 update: 
 > Group came together for creating master file and going over what we had to work with 
 > Cuisine types had method for flavour type hard-coded, so group agreed to remove the Flavour_types class as it was no longer needed
-> File was left in Github master branch for record
+> File was left in Github master branch for record (in docs folder)
 
 M to do:
 Create class for Cuisine_types 
 > should be array
 > array should include all cuisine type (i.e. geographical regions)
 > e.g. Chinese, Korean, Japanese, Middle Eastern (incl. Persian), Modern Australian, Pub fare, Vegetarian, Vietnamese, Cambodian, Colombian, Mexican, Chilean, Brazilian, French, German, Italian (person add as they like)
+
+Cuisine types file:
+[Cuisine_types file](https://raw.githubusercontent.com/gwencitaaa/terminal_app/master/Cuisine_types.rb)
 
 Day 2 update:
 > arrays created to give random selection of 3 cuisine types
@@ -98,21 +102,28 @@ Day 2 update: M completed and debugged
 group made changes to spelling, language + some variable names so they were more descriptive
 in interests of time, some were left general.
 
+Day 2 Trello update: sprints labelled visibly
+Trello Day 2 with sprints:
+![Trello screenshot](https://raw.githubusercontent.com/gwencitaaa/terminal_app/master/docs/Screen%20Shot%202019-03-06%20at%202.25.37%20pm.png)
+
 User flow
 We did a user flow at task level
-See visual plan for user flow in slide deck, screenshot 'Task flow diagram'
+See visual plan for user flow in slide deck, slide 4: 'Task flow diagram'
 
 Approval:
 Comments from Anhar : check out geocoder gem if time
-Put two classes together for food bc they're both food—we thought this seemed weird
-After going through different processes, agreed
+Put two classes together for food bc they're both food—we thought this seemed confusing at time
+After going through different processes, agreed to keep for now, maybe change later
 
 Approval: 
 received from Simon + Aaron
-Yes keep classes separate (three separate ideas)—changed as per previous notes
+Yes keep classes separate (three separate ideas)— however later changed as per record of decision making under the individual classes we did
 
 Day 2 updates
 Presentation slide deck draft completed, group to go through together and divy up speaking sections
+
+Presentation slide deck:
+[Presentation slide deck](https://github.com/gwencitaaa/terminal_app/blob/master/ppt/Terminal_app_presentation.pdf)
 Restaurant class removed as .csv file provides all data needed
     Instead, using functions to create array of restaurants by cuisine and select random restaurant (from single cuisine group)
 Master merged so files are current (e.g. Trello screenshot of progress added, updated code added, GIT cheatsheets removed)
