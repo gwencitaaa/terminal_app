@@ -121,6 +121,9 @@ Cuisine type class completed
 
 ~11:45am, group meeting to pull code together into one file 
 
+There has been a change in Application logic/flow. 'Flavour Types' class file may now not be needed as these options have been hard-coded into the Cuisine Types file
+Checked code styling/format and syntax
+Added a Method 
 3pm update
 SPRINT: Group coding for Master file
 All individual parts completed, commencing Master file sprint

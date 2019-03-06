@@ -1,7 +1,7 @@
 class FlavourType
     # allow these attributes to be read for each instance
     attr_reader :category_name, :cuisines
-
+    
     def initialize(category_name, cuisines)
         @category_name = category_name
         @cuisines = cuisines
